@@ -8,6 +8,7 @@ RUN wget https://github.com/fatedier/frp/releases/download/v${FRP_VERSION}/frp_$
 	tar xzf frp_${FRP_VERSION}_linux_amd64.tar.gz && \
 	cd frp_${FRP_VERSION}_linux_amd64 && \
 	mv frpc /frpc && \
+	mkdir /frp && \
 	mv frpc.ini /frp && \
 	cd .. && \
 	rm -rf *.tar.gz && \
